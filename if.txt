@@ -1,0 +1,92 @@
+//--------------------------coding on validation------------------------------//
+
+
+1.function netusage(totalmbdownloaded, mobiledownloadspeed)
+{
+if(totalmbdownloaded >= 100)
+{
+return "usage is completed"
+
+}
+else
+
+document.write(totalmbdownloaded,  mobiledownloadspeed)
+return "usage not completed"
+}
+var result = netusage("120", "32mbps")
+document.write(result)
+
+2.function faresummary(Base_fare, Passenger_Service_Fee,User_Development_Fee)
+//var total = "1435"
+{
+if(Passenger_Service_Fee <= "rs 149")
+{
+//var total = "1435"
+return "tickets not available"
+}
+else
+{
+document.write(Base_fare, Passenger_Service_Fee, User_Development_Fee)
+}
+}
+faresummary("rs 1650", "rs 125", "rs 350")
+
+3.function attribute(sales, face_value, net_profit, last_bonus)
+{
+if(net_profit != 20.5)
+{
+return "loss"
+}
+else
+{
+document.write(sales, face_value, net_profit, last_bonus)
+}
+}
+attribute("10,501", "2', "-13.05")
+
+4.function report_card(PE_ratio, EPS, Sales, face_value, net_profit_margin, last_dividend, return_on) 
+{
+if(sales == 575)
+{
+return "successfull"
+}
+else
+{
+document.write(PE_ratio, EPS, Sales, face_value, net_profit_margin, last_dividend, return_on)
+}
+report_card("22", "77.97", "575", "10", "89.25", "1.2", "14.55")
+
+5.let Banking_data = { 
+BankName : "SBI Bank",
+Date     : "29/05/14",
+Time     : "19:48",
+ATMNo    : "SJNBL48",
+CARDNo   : "xxxx xxxxx xxxx 0516",
+BRNCHNAME: "Bangalore Main Branch",
+TxnNo    : 2907,
+Responsecode : 072,
+WithDrawl: "500.00",
+FromAC   : "xxxxxxxxxx05 xx01",
+ModRS    : "0.00",
+AvlBal   : "1000.00",
+Website  : "www.statebankof india.com",
+}
+
+if(Banking_data.CARDNo.length == 20)
+{
+    document.write("valid data");
+
+}
+else
+{
+    document.write("Invalid data");
+
+}
+if(Banking_data.BankName == "SBI Bank" )
+{
+    document.write("SBI Branch");
+}
+else
+{
+   document.write("other banks");
+}
